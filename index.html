@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MedCare Hospital</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- font -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+
+  <!-- css file -->
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center">
+        <img src="./assets/emblem.png" alt="emblem" style="height:50px; width:auto;">
+        <a class="navbar-brand ms-2" href="#home">MedCare Hospital</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" target="_blank">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#booking">Book an Appointment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="departments.html" target="_blank">Our Departments</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="homeSection">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left text -->
+        <div class="col-md-6">
+          <h1>Welcome to MedCare Hospital</h1>
+          <p>Your health is our top priority. We provide world-class medical services with care and compassion.</p>
+          <a href="#booking" class="btn btn-primary mt-3">Book an Appointment</a>
+        </div>
+
+        <!--  Right home image -->
+        <div class="col-md-6">
+          <img src="./assets/home image.jpg" alt="homeImg">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- booking section -->
+  <section id="booking" class="py-5" style="background: linear-gradient(135deg, #007bff, #00c6ff); color: #fff;">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="p-5 bg-white rounded shadow">
+            <h2 class="text-center mb-4" style="color:#007bff;">Book Your Appointment</h2>
+            <p class="text-center mb-4">Fill in your details and our team will contact you shortly.</p>
+            <form>
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <input type="text" class="form-control" placeholder="Full Name" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <input type="tel" class="form-control" placeholder="Phone Number" required>
+                </div>
+                <div class="col-md-6">
+                  <select class="form-select" required>
+                    <option selected disabled>Choose Department</option>
+                    <option>Cardiology</option>
+                    <option>Neurology</option>
+                    <option>Pediatrics</option>
+                    <option>Orthopedics</option>
+                  </select>
+                </div>
+              </div>
+              <div class="mb-3">
+                <input type="date" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <textarea class="form-control" rows="3" placeholder="Additional Notes"></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Book Appointment</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

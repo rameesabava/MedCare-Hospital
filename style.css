@@ -1,0 +1,108 @@
+body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        /* Navbar */
+        nav.navbar {
+            background-color: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .nav-link {
+            color: #0f31bb !important;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav .nav-link:hover {
+            color: #003580 !important;
+        }
+
+        nav .navbar-brand {
+            font-weight: 700;
+            font-size: 1.5rem;
+            color: #0f31bb !important;
+        }
+
+        /* Home Section */
+        .homeSection {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            background: linear-gradient(135deg, #f0f4ff, #dbe9ff);
+            padding: 60px 0;
+        }
+
+        .homeSection h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #003580;
+        }
+
+        .homeSection p {
+            font-size: 1.3rem;
+            color: #333;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+            padding: 10px 25px;
+            font-size: 1.1rem;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        /* Image Styling */
+        .homeSection img {
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+        }
+        #booking input, #booking select, #booking textarea {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+#booking input:focus, #booking select:focus, #booking textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+    outline: none;
+}
+
+#booking .btn-primary {
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#booking .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+        /* Responsive adjustments */
+        @media (max-width: 767px) {
+            .homeSection h1 {
+                font-size: 2.2rem;
+                text-align: center;
+            }
+
+            .homeSection p {
+                text-align: center;
+            }
+
+            .homeSection .col-md-6 {
+                text-align: center;
+            }
+        }
