@@ -2,10 +2,9 @@ body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            scroll-behavior: smooth;
         }
 
-        /* Navbar */
+/* Navbar */
         nav.navbar {
             background-color: #ffffff;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -15,19 +14,19 @@ body {
         }
 
         nav .nav-link {
-            color: #0f31bb !important;
+            color: #0f31bb;
             font-weight: 500;
             transition: color 0.3s;
         }
 
         nav .nav-link:hover {
-            color: #003580 !important;
+            color: #030d1c;
         }
 
         nav .navbar-brand {
             font-weight: 700;
             font-size: 1.5rem;
-            color: #0f31bb !important;
+            color: #0f31bb;
         }
 
         /* Home Section */
@@ -69,14 +68,14 @@ body {
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             max-width: 100%;
         }
-        #booking input, #booking select, #booking textarea {
+        #booking input, #booking select {
     border-radius: 8px;
     border: 1px solid #ced4da;
     padding: 10px;
     transition: 0.3s;
 }
 
-#booking input:focus, #booking select:focus, #booking textarea:focus {
+#booking input:focus, #booking select:focus{
     border-color: #007bff;
     box-shadow: 0 0 5px rgba(0,123,255,0.5);
     outline: none;
@@ -90,6 +89,44 @@ body {
 #booking .btn-primary:hover {
     background-color: #0056b3;
 }
+/* Hero Section */
+    .dept-hero {
+      background: linear-gradient(rgba(0, 123, 255, 0.8),
+          rgba(0, 198, 255, 0.8)),
+        url('./assets/home image.jpg') center/cover;
+      color: white;
+      padding: 80px 0;
+      text-align: center;
+    }
+
+    /* Department Cards */
+    .dept-card {
+      transition: all 0.3s ease;
+      border: none;
+      border-radius: 15px;
+    }
+
+    .dept-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .dept-icon {
+      font-size: 40px;
+      color: #007bff;
+    }
+
+    .card-title {
+      font-weight: 600;
+      color: #007bff;
+    }
+
+    footer {
+      background: #007bff;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
 
         /* Responsive adjustments */
         @media (max-width: 767px) {

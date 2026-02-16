@@ -12,7 +12,7 @@
   <!-- font -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
 
-  <!-- css file -->
+  <!-- style css -->
   <link rel="stylesheet" href="./style.css">
 
 </head>
@@ -74,7 +74,8 @@
         <div class="col-lg-8">
           <div class="p-5 bg-white rounded shadow">
             <h2 class="text-center mb-4" style="color:#007bff;">Book Your Appointment</h2>
-            <p class="text-center mb-4">Fill in your details and our team will contact you shortly.</p>
+            <p class="text-center mb-4" style="color:#20568f;">Fill your details and our team will contact you shortly.
+            </p>
             <form>
               <div class="row mb-3">
                 <div class="col-md-6 mb-3 mb-md-0">
@@ -91,19 +92,20 @@
                 <div class="col-md-6">
                   <select class="form-select" required>
                     <option selected disabled>Choose Department</option>
-                    <option>Cardiology</option>
-                    <option>Neurology</option>
+                    <option>General medicine</option>
                     <option>Pediatrics</option>
                     <option>Orthopedics</option>
+                    <option>Cardiology</option>
+                    <option>Dermatology</option>
+                    <option>Gynaecology</option>
+                    <option>General surgery</option>
                   </select>
                 </div>
               </div>
               <div class="mb-3">
                 <input type="date" class="form-control" required>
               </div>
-              <div class="mb-3">
-                <textarea class="form-control" rows="3" placeholder="Additional Notes"></textarea>
-              </div>
+
               <div class="text-center">
                 <button type="submit" class="btn btn-primary btn-lg">Book Appointment</button>
               </div>
