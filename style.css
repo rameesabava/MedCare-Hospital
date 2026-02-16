@@ -89,11 +89,11 @@ body {
 #booking .btn-primary:hover {
     background-color: #0056b3;
 }
-/* Hero Section */
-    .dept-hero {
-      background: linear-gradient(rgba(0, 123, 255, 0.8),
-          rgba(0, 198, 255, 0.8)),
-        url('./assets/home image.jpg') center/cover;
+/* dept home */
+    .dept-home {
+      background: linear-gradient(rgba(25, 54, 85, 0.8),
+          rgba(20, 132, 163, 0.8)),
+        url('./assets/dpts.png') center/cover;
       color: white;
       padding: 80px 0;
       text-align: center;
@@ -113,7 +113,7 @@ body {
 
     .dept-icon {
       font-size: 40px;
-      color: #007bff;
+      color: #0779c5;
     }
 
     .card-title {
@@ -128,7 +128,7 @@ body {
       text-align: center;
     }
 
-        /* Responsive adjustments */
+        /* Responsive */
         @media (max-width: 767px) {
             .homeSection h1 {
                 font-size: 2.2rem;
